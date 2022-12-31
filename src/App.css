@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+.row_poster {
+  width: 100%;
+  /* this makes the image contained aka not weird, so after you fix the height or the width the image will be responseve with that */
+  object-fit: contain;
+  max-height: 150px;
+  margin-right: 10px;
+  transition: transform 450ms;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row_poster:hover {
+  transform: scale(1.08);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row_posterLarge {
+  max-height: 250px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row_posterLarge:hover {
+  transform: scale(1.09);
 }
-
-.App-link {
-  color: #61dafb;
+.app {
+  background-color: #111;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
 }
